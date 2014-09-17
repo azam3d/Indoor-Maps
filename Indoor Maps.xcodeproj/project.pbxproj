@@ -16,6 +16,9 @@
 		978B449419C9E31D00C29BBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978B449319C9E31D00C29BBA /* Images.xcassets */; };
 		978B449719C9E31D00C29BBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978B449519C9E31D00C29BBA /* LaunchScreen.xib */; };
 		978B44A319C9E31D00C29BBA /* Indoor_MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44A219C9E31D00C29BBA /* Indoor_MapsTests.m */; };
+		978B44AE19C9E33300C29BBA /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */; };
+		978B44B119C9E33F00C29BBA /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44B019C9E33F00C29BBA /* JSTileMap.m */; };
+		978B44B319C9E3C300C29BBA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 978B44B219C9E3C300C29BBA /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 		978B449C19C9E31D00C29BBA /* Indoor MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indoor MapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978B44A119C9E31D00C29BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978B44A219C9E31D00C29BBA /* Indoor_MapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Indoor_MapsTests.m; sourceTree = "<group>"; };
+		978B44AC19C9E33300C29BBA /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
+		978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
+		978B44AF19C9E33F00C29BBA /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
+		978B44B019C9E33F00C29BBA /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
+		978B44B219C9E3C300C29BBA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978B44B319C9E3C300C29BBA /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +77,7 @@
 		978B447519C9E31D00C29BBA = {
 			isa = PBXGroup;
 			children = (
+				978B44B219C9E3C300C29BBA /* libz.dylib */,
 				978B448019C9E31D00C29BBA /* Indoor Maps */,
 				978B449F19C9E31D00C29BBA /* Indoor MapsTests */,
 				978B447F19C9E31D00C29BBA /* Products */,
@@ -104,6 +114,10 @@
 		978B448119C9E31D00C29BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				978B44AC19C9E33300C29BBA /* LFCGzipUtility.h */,
+				978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */,
+				978B44AF19C9E33F00C29BBA /* JSTileMap.h */,
+				978B44B019C9E33F00C29BBA /* JSTileMap.m */,
 				978B448219C9E31D00C29BBA /* Info.plist */,
 				978B448319C9E31D00C29BBA /* main.m */,
 			);
@@ -229,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				978B448F19C9E31D00C29BBA /* GameViewController.m in Sources */,
+				978B44AE19C9E33300C29BBA /* LFCGzipUtility.m in Sources */,
 				978B448719C9E31D00C29BBA /* AppDelegate.m in Sources */,
+				978B44B119C9E33F00C29BBA /* JSTileMap.m in Sources */,
 				978B448A19C9E31D00C29BBA /* GameScene.m in Sources */,
 				978B448419C9E31D00C29BBA /* main.m in Sources */,
 			);

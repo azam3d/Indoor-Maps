@@ -8,6 +8,8 @@
 
 #import "GameScene.h"
 
+@class JSTileMap;
+
 @implementation GameScene
 
 -(void)didMoveToView:(SKView *)view {
@@ -20,6 +22,10 @@
                                    CGRectGetMidY(self.frame));
     
     [self addChild:myLabel];
+    
+    JSTileMap* tiledMap = [JSTileMap mapNamed:@"mapFileName.tmx"];
+    if (tiledMap)
+        [mySKNode addChild:tiledMap];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
