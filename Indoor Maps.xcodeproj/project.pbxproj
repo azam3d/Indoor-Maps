@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974280C419CA04ED00BD1375 /* IDMLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 974280C319CA04ED00BD1375 /* IDMLevel.m */; };
 		978B448419C9E31D00C29BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B448319C9E31D00C29BBA /* main.m */; };
 		978B448719C9E31D00C29BBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B448619C9E31D00C29BBA /* AppDelegate.m */; };
 		978B448A19C9E31D00C29BBA /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B448919C9E31D00C29BBA /* GameScene.m */; };
@@ -16,9 +17,6 @@
 		978B449419C9E31D00C29BBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978B449319C9E31D00C29BBA /* Images.xcassets */; };
 		978B449719C9E31D00C29BBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 978B449519C9E31D00C29BBA /* LaunchScreen.xib */; };
 		978B44A319C9E31D00C29BBA /* Indoor_MapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44A219C9E31D00C29BBA /* Indoor_MapsTests.m */; };
-		978B44AE19C9E33300C29BBA /* LFCGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */; };
-		978B44B119C9E33F00C29BBA /* JSTileMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 978B44B019C9E33F00C29BBA /* JSTileMap.m */; };
-		978B44B319C9E3C300C29BBA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 978B44B219C9E3C300C29BBA /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		974280C219CA04ED00BD1375 /* IDMLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IDMLevel.h; path = ../IDMLevel.h; sourceTree = "<group>"; };
+		974280C319CA04ED00BD1375 /* IDMLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IDMLevel.m; path = ../IDMLevel.m; sourceTree = "<group>"; };
 		978B447E19C9E31D00C29BBA /* Indoor Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Indoor Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978B448219C9E31D00C29BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978B448319C9E31D00C29BBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,11 +48,6 @@
 		978B449C19C9E31D00C29BBA /* Indoor MapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Indoor MapsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978B44A119C9E31D00C29BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		978B44A219C9E31D00C29BBA /* Indoor_MapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Indoor_MapsTests.m; sourceTree = "<group>"; };
-		978B44AC19C9E33300C29BBA /* LFCGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCGzipUtility.h; sourceTree = "<group>"; };
-		978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCGzipUtility.m; sourceTree = "<group>"; };
-		978B44AF19C9E33F00C29BBA /* JSTileMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTileMap.h; sourceTree = "<group>"; };
-		978B44B019C9E33F00C29BBA /* JSTileMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTileMap.m; sourceTree = "<group>"; };
-		978B44B219C9E3C300C29BBA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				978B44B319C9E3C300C29BBA /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +71,6 @@
 		978B447519C9E31D00C29BBA = {
 			isa = PBXGroup;
 			children = (
-				978B44B219C9E3C300C29BBA /* libz.dylib */,
 				978B448019C9E31D00C29BBA /* Indoor Maps */,
 				978B449F19C9E31D00C29BBA /* Indoor MapsTests */,
 				978B447F19C9E31D00C29BBA /* Products */,
@@ -96,6 +89,8 @@
 		978B448019C9E31D00C29BBA /* Indoor Maps */ = {
 			isa = PBXGroup;
 			children = (
+				974280C219CA04ED00BD1375 /* IDMLevel.h */,
+				974280C319CA04ED00BD1375 /* IDMLevel.m */,
 				978B448519C9E31D00C29BBA /* AppDelegate.h */,
 				978B448619C9E31D00C29BBA /* AppDelegate.m */,
 				978B448819C9E31D00C29BBA /* GameScene.h */,
@@ -114,10 +109,6 @@
 		978B448119C9E31D00C29BBA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				978B44AC19C9E33300C29BBA /* LFCGzipUtility.h */,
-				978B44AD19C9E33300C29BBA /* LFCGzipUtility.m */,
-				978B44AF19C9E33F00C29BBA /* JSTileMap.h */,
-				978B44B019C9E33F00C29BBA /* JSTileMap.m */,
 				978B448219C9E31D00C29BBA /* Info.plist */,
 				978B448319C9E31D00C29BBA /* main.m */,
 			);
@@ -243,9 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				978B448F19C9E31D00C29BBA /* GameViewController.m in Sources */,
-				978B44AE19C9E33300C29BBA /* LFCGzipUtility.m in Sources */,
 				978B448719C9E31D00C29BBA /* AppDelegate.m in Sources */,
-				978B44B119C9E33F00C29BBA /* JSTileMap.m in Sources */,
+				974280C419CA04ED00BD1375 /* IDMLevel.m in Sources */,
 				978B448A19C9E31D00C29BBA /* GameScene.m in Sources */,
 				978B448419C9E31D00C29BBA /* main.m in Sources */,
 			);
@@ -369,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Muhammad Azam Baderi (2S2DYJCY7R)";
 				INFOPLIST_FILE = "Indoor Maps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Muhammad Azam Baderi (2S2DYJCY7R)";
 				INFOPLIST_FILE = "Indoor Maps/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +430,7 @@
 				978B44A819C9E31D00C29BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		978B44A919C9E31D00C29BBA /* Build configuration list for PBXNativeTarget "Indoor MapsTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +439,7 @@
 				978B44AB19C9E31D00C29BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
